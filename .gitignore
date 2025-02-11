@@ -1,0 +1,18 @@
+# Ignore environment configuration files
+.env
+
+# Ignore dependencies (if using Composer)
+vendor/
+
+# Ignore cache and temporary files
+*.log
+cache/
+tmp/
+
+# Ignore IDE/editor files
+.vscode/
+.idea/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
