@@ -12,7 +12,7 @@ This repository contains the PHP and database-related code used in my YouTube tu
 ## 📖 How to Use
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/your-repository.git
+   git clone https://github.com/ArLiw317/test.git
    ```
 2. Set up a local server (e.g., XAMPP, WAMP, or Laragon).
 3. Import the provided database (Path sql\test.sql file) into MySQL.
