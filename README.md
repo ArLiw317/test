@@ -14,7 +14,10 @@ This repository contains the PHP and database-related code used in my YouTube tu
    ```bash
    git clone https://github.com/ArLiw317/test.git
    ```
-2. Set up a local server (e.g., XAMPP, WAMP, or Laragon).
+2. Set up a local server (e.g., XAMPP, WAMP, or Laragon)
+   Create username and password
+   username = "test";
+   password = "test";
 3. Import the provided database (Path sql\test.sql file) into MySQL.
 4. Run the PHP scripts on your local server.
 
