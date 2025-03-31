@@ -8,6 +8,14 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/2.2.2/css/dataTables.bootstrap5.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.datatables.net/2.2.2/js/dataTables.js"></script>
+    <script src="https://cdn.datatables.net/2.2.2/js/dataTables.bootstrap5.js"></script>
 </head>
 
 <body>
@@ -39,7 +47,7 @@
                         </div>
                     </form>
                 </div>
-            </div>
+            </div>            
             <div class="row mt-3 justify-content-center">
                 <div class="col-6">
                     <div class="card shadow">
@@ -62,11 +70,11 @@
                                     ?>
                                         <td class="text-center">
                                             <a class="editbtn" href="#" data-bs-toggle="modal" data-bs-target="#edit_customer" style="text-decoration:none">
-                                            <i class="bi bi-pencil-square" style="color:rgb(255, 204, 0)"></i>
+                                                <i class="bi bi-pencil-square" style="color:rgb(255, 204, 0)"></i>
                                             </a>
-                                        
+
                                             <a class="deletebtn" href="#" data-bs-toggle="modal" data-bs-target="#delete_customer" style="text-decoration:none">
-                                            <i class="bi bi-trash3" style="color:rgb(255, 22, 131)"></i>
+                                                <i class="bi bi-trash3" style="color:rgb(255, 22, 131)"></i>
                                             </a>
                                         </td>
                                     <?php
@@ -178,6 +186,12 @@
                     $('#cus_name_DELETE').val(data[2]);
                 });
             });
+        </script>
+
+        <script>
+            $(document).ready(function() {
+                $('#customer_table').DataTable();
+            }); 
         </script>
 
 
